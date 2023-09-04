@@ -1,0 +1,65 @@
+name: "Cryptotraque 1"
+author: "nathan.out"
+category: Forensic
+# "|" pour prendre en compte les newlines "-" pour strip toute les newlines de fin, "4" pour le nombre d'espaces
+description: |-4 
+    
+    Le système informatique de <?> a été piraté et tous les fichiers ont été chiffrés. Le pirate a laissé une demande de rançon sous la forme d'un fichier odt. Nous aimerions que vous fassiez parler ce fichier. Est-ce que le pirate aurait laissé par inadvertance des informations permettant de l'identifier ?
+
+Trouvez le logiciel, son numéro de version ainsi que le système d'exploitation utilisé pour créer ce fichier.
+
+Format du flag attendu : NBCTF{<nom_logiciel>/<version>$<systeme_dexploitation>}
+
+**Exemple** de flag attendu : `NBCTF{Paint/14.0.4.2$Windows10_X86_64}`
+
+    Auteur: [nathan.out](https://nathan-out.github.io/)
+
+
+host:
+    #nc url:port
+
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags:
+    - NBCTF{LibreOffice/7.5.4.2$Linux_X86_64}
+
+# Champs optionnels, peuvent être supprimés si non utilisés
+
+hints:
+    - {
+        content: "Un fichier odt peut être ouvert comme une archive.",
+        cost: 100
+    }
+    - {
+        content: "Changer l'extension du fichier en ".zip".",
+        cost: 100
+    }
+    - {
+        content: "Nous sommes à la recherche de **meta** données.",
+        cost: 100
+    }
+    - Comment ouvrir autrement un fichier odt ?
+
+# Challenges précédents qui doivent être résolus avant de pouvoir accéder à celui-ci
+# Nom des challenges (strings) ou ID des challenges (entiers)
+requirements:
+    - 
+
+tags:
+    - Facile
+    - metadatas
+    - nathan.out
+
+# Chemin vers les fichiers donnés pour le challenge
+files:
+    - ressources/HACKED_BY_GliTcHMaSt3r69.odt
+
+# Dont touch that (ctfcli related)
+version: "0.1"
