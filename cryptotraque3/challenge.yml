@@ -1,0 +1,61 @@
+name: "Cryptotraque3"
+author: "nathan.out"
+category: Stéganographie
+# "|" pour prendre en compte les newlines "-" pour strip toute les newlines de fin, "4" pour le nombre d'espaces
+description: |-4 
+    
+    L'identification du portefeuille nous a conduit à l'un des auteurs du piratage, bien joué ! Nous avons pu l'identifier, l'arrêter et saisi son ordinateur. Nos analystes ont identifié un document suspect qui pourrait contenir des informations sur la manière dont ce serait déroulé le piratage. Découvrez les informations cachées dans ce fichier.
+
+Format du flag attendu : NBCTF{un_mot_de_passe}
+
+    Auteur: [nathan.out](https://nathan-out.github.io/)
+
+
+host:
+    #nc url:port
+
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 100
+    minimum: 50
+
+flags:
+    - NBCTF{que_pour_largent2023!}
+
+# Champs optionnels, peuvent être supprimés si non utilisés
+
+hints:
+    - {
+        content: "Vous connaissez les Matriochka ?",
+        cost: 100
+    }
+    - {
+        content: "Le challenge Cryptotraque1 y ressemble beaucoup...",
+        cost: 100
+    }
+    - {
+        content: "Ouvrez le document avec un gestionnaire d'archive (ex : Winrar).",
+        cost: 100
+    }
+    - Le flag attendu est un mot de passe. Il n'est pas nécessaire d'avoir fait Cryptotraque 1 et 2 avant.
+
+# Challenges précédents qui doivent être résolus avant de pouvoir accéder à celui-ci
+# Nom des challenges (strings) ou ID des challenges (entiers)
+requirements:
+    - 
+
+tags:
+    - Moyen
+    - stéganographie
+    - nathan.out
+
+# Chemin vers les fichiers donnés pour le challenge
+files:
+    - ressources/projet_de_recherche_economie.odt
+
+# Dont touch that (ctfcli related)
+version: "0.1"
