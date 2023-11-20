@@ -1,4 +1,4 @@
-# Cryptotraque 2 - Write-Up
+# Cryptotraque 2 - Write-Up
 
 Chaque ligne représente une transaction. La première colonne est le wallet (portefeuille) qui a émit une transaction, la seconde est le wallet qui a reçu la transaction et la dernière colonne est le montant de la transaction.
 
