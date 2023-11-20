@@ -1,4 +1,4 @@
-# Cryptotraque 3 - Write-Up
+# Cryptotraque 3 - Write-Up
 
 Nous savons que le document contient des informations cachées. Pourtant, en l'ouvrant, nous ne distinguons pas de choses inhabituelles : pas de texte en blanc sur fond blanc, pas de texte écrit en petit, pas d'image qui cacherait du texte...
 
