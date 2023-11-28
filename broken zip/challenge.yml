@@ -1,0 +1,51 @@
+name: "Broken Zip"
+author: "nathan.out"
+category: Forensic
+# "|" pour prendre en compte les newlines "-" pour strip toute les newlines de fin, "4" pour le nombre d'espaces
+description: |-4 
+    
+    Bravo, vous avez passé les premiers entretiens pour rentrer dans la très prestigieuse police scientifique du Frankistan !
+
+    Afin de nous assurer que vous avez les compétences requises pour ce poste, nous vous avons préparé un challenge.
+
+    Quelque chose dans cette archive semble cassé, à vous de la réparer. Le zip est chiffré avec un mot de passe : ^Qx7&S$9#geBzVe@SpJm4$#Jn
+
+    Auteur: [nathan.out](https://nathan-out.github.io/)
+
+
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 6
+    minimum: 100
+
+flags:
+    - NBCTF{always_usefull_to_know_how_a_filetype_works}
+
+# Champs optionnels, peuvent être supprimés si non utilisés
+
+hints:
+    - {
+        content: "Cette ressource a l'air vraiment utile : https://users.cs.jmu.edu/buchhofp/forensics/formats/pkzip.html.",
+        cost: 250
+    }
+
+# Challenges précédents qui doivent être résolus avant de pouvoir accéder à celui-ci
+# Nom des challenges (strings) ou ID des challenges (entiers)
+requirements:
+    - 
+
+tags:
+    - Moyen
+    - Zip
+    - nathan.out
+
+# Chemin vers les fichiers donnés pour le challenge
+files:
+    - ressources/secret.zip
+
+# Dont touch that (ctfcli related)
+version: "0.1"
