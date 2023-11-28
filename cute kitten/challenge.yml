@@ -1,0 +1,45 @@
+name: "Cute kitten"
+author: "nathan.out"
+category: Forensic
+# "|" pour prendre en compte les newlines "-" pour strip toute les newlines de fin, "4" pour le nombre d'espaces
+description: |-4 
+    
+    Au pays du Frankistan, il est formellement interdit de détenir des images de chatons. Toute détention, partage ou création de telles images est très sévèrement punnie par la loi. 
+    
+    Vous êtes un nouveau membre de la police scientifique du Frankistan. On vous confie le dump RAM d'un ordinateur d'une personne qui est soupçonnée de détenir des images de chatons.
+
+    A vous de faire parler ce fichier pour retrouver d'éventuelles traces d'image de chaton, bonne chance.
+
+    Nota : le challenge a été testé sur la version 2.5.0 de Volatility3. Si vous utilisez une autre version, c'est à vos risques et périls...
+
+    Auteur: [nathan.out](https://nathan-out.github.io/)
+
+
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 6
+    minimum: 100
+
+flags:
+    - NBCTF{ram-loaded_images_are_evidence}
+
+# Champs optionnels, peuvent être supprimés si non utilisés
+
+
+tags:
+    - Difficile
+    - RAM
+    - nathan.out
+
+# Chemin vers les fichiers donnés pour le challenge
+# files:
+#     - ressources/memdump.zip
+
+connection_info: https://www.swisstransfer.com/d/cce7d999-1750-4241-aff6-f4a973db0401
+
+# Dont touch that (ctfcli related)
+version: "0.1"
